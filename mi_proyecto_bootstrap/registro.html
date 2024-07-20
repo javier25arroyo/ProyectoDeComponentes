@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Mi Proyecto Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tu CSS personalizado -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body class="d-flex align-items-center justify-content-center vh-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4">Registro</h2>
+                        <!-- Contenedores para los mensajes de éxito y error -->
+                        <div id="successMessage" class="alert alert-success d-none" role="alert">
+                            ¡Registro exitoso! Ahora puede iniciar sesión.
+                        </div>
+                        <div id="errorMessage" class="alert alert-danger d-none" role="alert">
+                            No se pudo registrar. Por favor, intente nuevamente.
+                        </div>
+                        <form id="registroForm">
+                            <div class="form-group mb-3">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="apellidos">Apellidos</label>
+                                <input type="text" class="form-control" id="apellidos" placeholder="Ingrese sus apellidos">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+                            </div>
+														<div class="form-group mb-4">
+															<label for="contraseña">Contraseña</label>
+															<input type="password" class="form-control" id="contraseña" placeholder="Ingrese su contraseña">
+													</div>
+                            <div class="form-group mb-3">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su teléfono">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="fechaRegistro">Fecha de Registro</label>
+                                <input type="date" class="form-control" id="fechaRegistro">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 mb-3">Registrarse</button>
+                        </form>
+                        <a href="index.html" class="btn btn-secondary w-100">Volver a Iniciar Sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tu JS personalizado -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
