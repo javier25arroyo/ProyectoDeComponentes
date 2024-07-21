@@ -1,0 +1,21 @@
+/* Cambiar el color de fondo del navbar */
+.navbar-custom {
+  background-color: #343a40; /* Color oscuro */
+}
+
+/* Cambiar el color del texto del navbar */
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #ffffff; /* Color blanco */
+}
+
+/* Cambiar el color del texto del dropdown */
+.navbar-custom .dropdown-menu .dropdown-item {
+  color: #343a40; /* Color oscuro */
+}
+
+/* Cambiar el color de fondo del dropdown al pasar el ratón */
+.navbar-custom .dropdown-menu .dropdown-item:hover {
+  background-color: #495057; /* Color gris oscuro */
+  color: #ffffff; /* Color blanco */
+}
