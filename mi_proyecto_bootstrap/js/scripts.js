@@ -35,7 +35,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 document.getElementById('loginForm').addEventListener('submit', function(event) {
   event.preventDefault();
   // Simulación de autenticación
-  const autenticacionExitosa = true; // Cambiar a true para simular autenticación exitosa
+  const autenticacionExitosa = false; // Cambiar a true para simular autenticación exitosa
 
   if (autenticacionExitosa) {
       // Redirigir a la página de funciones CRUD
@@ -45,6 +45,26 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
       document.getElementById('errorMessage').classList.remove('d-none');
   }
 });
+
+//crud.html
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Aquí puedes agregar la lógica para enviar los datos del formulario al servidor
+            // Simulación de registro exitoso
+            const registroExitoso = true; // Simulación fija
+
+            if (!registroExitoso) {
+                // Mostrar el mensaje de error
+                document.getElementById('error-message').classList.remove('d-none');
+                return;
+            }else{
+                // Limpiar el formulario
+                this.reset();
+            }
+            // Mostrar el mensaje de éxito
+            document.getElementById('success-message').classList.remove('d-none');
+        });
+//crud.html
 
 
 
